@@ -26,6 +26,35 @@
 
   <link rel="icon" href="./favicon.ico">
 
+  <style>
+    .cover-hero {
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .cover-hero video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .video-card video,
+    .wide-video video {
+      width: 100%;
+      border: 1px solid #bbb;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+
   <!-- <meta property="og:site_name" content="Learning to Plan Maneuverable and Agile Flight Trajectory with Optimization Embedded Networks" />
   <meta property="og:type" content="video.other" />
   <meta property="og:title" content="Learning to Plan Maneuverable and Agile Flight Trajectory with Optimization Embedded Networks" />
@@ -53,6 +82,10 @@
 
 
 <body>
+
+  <section class="cover-hero">
+    <video autoplay loop muted playsinline src="./github2/video/封面.mp4"></video>
+  </section>
 
   <section class="hero">
     <div class="hero-body">
@@ -196,23 +229,13 @@
 
   <section class="section" id="video">
     <div class="container">
-      <h2 class="title is-2" style="text-align: center;">Video</h2>
+      <h2 class="title is-2 section-title">Video</h2>
       <div class="columns is-centered">
         <div class="column is-four-fifths has-text-centered">
           <div
             style="border: 1px solid #bbb; border-radius: 10px; padding: 6rem 1rem; background: #f7f7f7; color: #666;">
             Bilibili video coming soon
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-four-fifths has-text-centered">
-          <img src="./github2/首图-small-long.png" alt="SWAP robot parkour overview" style="width: 100%;" />
         </div>
       </div>
     </div>
@@ -244,10 +267,10 @@
 
   <section class="section">
     <div class="container">
-      <h2 class="title is-2" style="text-align: center;">Method Overview</h2>
+      <h2 class="title is-2 section-title">Method Overview</h2>
       <div class="columns is-centered">
-        <div class="column is-four-fifths has-text-centered">
-          <img src="./github2/SWAP_Architecture_overview.png" alt="SWAP method overview" style="width: 100%;" />
+        <div class="column is-four-fifths wide-video">
+          <video controls autoplay loop muted playsinline src="./github2/video/算法.mp4"></video>
         </div>
       </div>
       <div class="columns is-centered">
@@ -268,29 +291,49 @@
 
   <section class="section">
     <div class="container">
-      <h2 class="title is-2" style="text-align: center;">Generalization</h2>
-      <div class="columns is-centered is-vcentered">
-        <div class="column is-half has-text-centered">
-          <img src="./github2/all_hike_small.png" alt="SWAP generalization results" style="width: 100%;" />
+      <h2 class="title is-2 section-title">Extreme Locomotion</h2>
+      <div class="columns is-centered">
+        <div class="column is-half video-card">
+          <video controls autoplay loop muted playsinline src="./github2/video/跳远.mp4"></video>
         </div>
-        <div class="column is-half">
-          <div class="content has-text-justified">
-            <p>
-              During high-dynamic outdoor maneuvers, the robot successfully climbs a 1-meter-high wet granite platform
-              even when both front legs slip; similarly, when leaping over outdoor gaps, it achieves a stable landing on
-              an uneven dirt slope despite physical interference from tall shrubs along the trajectory. When confronting
-              perception degradation, such as unpredictable specular reflections in dynamic shallow waters or navigating
-              dark staircases, the policy effectively overcomes visual failures, ensuring stable locomotion.
-            </p>
-            <p>
-              Regarding profound visual-proprioceptive mismatch, such as encountering non-rigid obstacles like scattered
-              cardboard and tall grass, visual appearance no longer reliably predicts actual physical support;
-              nevertheless, the policy successfully adapts to terrain changes and maintains dynamic balance. Under
-              unpredictable contact dynamics, such as traversing rubble or movable carpets, force-induced displacement of
-              these loose materials leads to unstable contact states, yet the robot effectively rejects these disturbances
-              to ensure sustained traversal.
-            </p>
-          </div>
+        <div class="column is-half video-card">
+          <video controls autoplay loop muted playsinline src="./github2/video/跳高.mp4"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 section-title">Wilderness Generalization: Gap &amp; Platform</h2>
+      <div class="columns is-centered">
+        <div class="column is-half video-card">
+          <video controls autoplay loop muted playsinline src="./github2/video/野外gap.mp4"></video>
+        </div>
+        <div class="column is-half video-card">
+          <video controls autoplay loop muted playsinline src="./github2/video/野外box.mp4"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 section-title">Robustness in Adverse Environments</h2>
+      <div class="columns is-centered">
+        <div class="column is-one-third video-card">
+          <video controls autoplay loop muted playsinline src="./github2/video/水下.mp4"></video>
+        </div>
+        <div class="column is-one-third video-card">
+          <video controls autoplay loop muted playsinline src="./github2/video/黑夜台阶.mp4"></video>
+        </div>
+        <div class="column is-one-third video-card">
+          <video controls autoplay loop muted playsinline src="./github2/video/垃圾堆.mp4"></video>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths wide-video">
+          <video controls autoplay loop muted playsinline src="./github2/video/山坡.mp4"></video>
         </div>
       </div>
     </div>
