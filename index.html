@@ -292,9 +292,9 @@
   <section class="section">
     <div class="container">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-two-thirds">
+        <div class="column is-three-quarters">
           <h2 class="title is-2">Abstract</h2>
-          <div class="content has-text-justified">
+          <div class="content has-text-justified" style="font-size: 1.15rem; line-height: 1.75;">
             <p>
               While latent world models enable the proactive predictions required for extreme parkour, their purely
               data-driven nature forces them to redundantly encode left-right symmetric interactions as independent
@@ -317,19 +317,19 @@
     <div class="container">
       <h2 class="title is-2 section-title">Method Overview</h2>
       <div class="columns is-centered">
-        <div class="column is-four-fifths wide-video">
+        <div class="column is-two-thirds wide-video">
           <video controls autoplay loop muted playsinline src="./github2/video/算法.mp4"></video>
         </div>
       </div>
       <div class="columns is-centered">
-        <div class="column is-two-thirds">
-          <div class="content has-text-justified">
+        <div class="column is-three-quarters">
+          <div class="content has-text-justified" style="font-size: 1.15rem; line-height: 1.75;">
             <p>
-              SWAP is an end-to-end framework that jointly optimizes a symmetric equivariant world model and a symmetric
-              equivariant actor-critic policy within a single training stage. As illustrated in Fig. 2, the world model
-              learns geometry-aware latent representations from multimodal sensory inputs, while the Actor generates
-              motor commands from these representations and real-time proprioceptive inputs, and the Critic provides
-              value estimates for training.
+              SWAP embeds physical symmetry directly into both the latent world model and the actor-critic networks for
+              agile locomotion. The framework features a low-frequency Symmetric Equivariant World Model that maps
+              mirrored physical observations to mirrored latent states. Conditioned on this geometry-aware
+              representation, a high-frequency Equivariant Actor generates symmetric equivariant actions, while an
+              Invariant Critic ensures identical value estimations across mirrored states.
             </p>
           </div>
         </div>
