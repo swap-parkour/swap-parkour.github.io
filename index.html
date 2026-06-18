@@ -32,6 +32,7 @@
       width: 100%;
       overflow: hidden;
       background: #000;
+      position: relative;
     }
 
     .cover-hero video {
@@ -39,6 +40,42 @@
       height: 100%;
       object-fit: cover;
       display: block;
+    }
+
+    .cover-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      pointer-events: none;
+    }
+
+    .cover-title {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 700;
+      font-size: clamp(6rem, 15vw, 13rem);
+      line-height: 0.8;
+      letter-spacing: 0.02em;
+    }
+
+    .cover-title .blue {
+      color: #1264A2;
+    }
+
+    .cover-title .orange {
+      color: #BD3E15;
+    }
+
+    .cover-subtitle {
+      margin-top: 0.7rem;
+      color: #fff;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 700;
+      font-size: clamp(1.8rem, 4.2vw, 3.7rem);
+      line-height: 1.08;
     }
 
     .video-card video,
@@ -85,6 +122,16 @@
 
   <section class="cover-hero">
     <video autoplay loop muted playsinline src="./github2/video/封面.mp4"></video>
+    <div class="cover-overlay" aria-hidden="true">
+      <div class="cover-title">
+        <span class="blue">S</span><span class="orange">W</span><span class="blue">A</span><span
+          class="orange">P</span>
+      </div>
+      <div class="cover-subtitle">
+        Symmetric Equivariant World-Model<br>
+        for Agile Robot Parkour
+      </div>
+    </div>
   </section>
 
   <section class="hero">
