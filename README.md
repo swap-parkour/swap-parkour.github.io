@@ -10,7 +10,7 @@ Thanks a lot :)
 @article{lan2026swap,
   title={SWAP: Symmetric Equivariant World-Model for Agile Robot Parkour},
   author={Lan, Kaixin and Wang, Ze and Li, Hongyi and Jiang, Lei and Fu, Chaojie and Su, Chengkai and Wong, Choi Lam and Jin, Yongbin and Wang, Hongtao},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2606.19928},
   year={2026}
 }
 ```
